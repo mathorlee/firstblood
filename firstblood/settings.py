@@ -25,7 +25,7 @@ SECRET_KEY = 'q^rasdcm6p9iclqwp=3*(bmw$*q%lvs$)xrz99!*vbur3af!ko'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.4.199']
+ALLOWED_HOSTS = ['192.168.4.199', 'www.lisongsong.net', '127.0.0.1']
 
 
 # Application definition
