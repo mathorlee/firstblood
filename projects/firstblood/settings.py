@@ -11,6 +11,16 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import sys
+
+dd = os.path.dirname
+jj = os.path.join
+PROJECT_ROOT = os.path.normpath(dd(dd(dd(__file__))))
+# print 'PROJECT_ROOT=%s' % PROJECT_ROOT
+
+sys.path.insert(1, jj(PROJECT_ROOT, 'projects'))
+sys.path.insert(1, jj(PROJECT_ROOT, 'apps'))
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
