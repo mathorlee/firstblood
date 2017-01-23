@@ -30,6 +30,11 @@ class Article(models.Model):
     score = models.IntegerField()
     tags = models.ManyToManyField('Tag')
 
+    class Meta:
+        app_label = 'blog'
+        verbose_name = u'文章'
+        verbose_name_plural = u'文章'
+
     def __str__(self):
         return self.title
  
@@ -37,6 +42,12 @@ class Article(models.Model):
 @python_2_unicode_compatible
 class Tag(models.Model):
     name = models.CharField(max_length=50)
- 
+
+
+    class Meta:
+        app_label = 'blog'
+        verbose_name = u'标签'
+        verbose_name_plural = u'标签'
+
     def __str__(self):
         return self.name
