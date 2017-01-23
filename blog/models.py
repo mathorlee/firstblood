@@ -4,8 +4,8 @@ from django.utils.encoding import python_2_unicode_compatible
  
 @python_2_unicode_compatible
 class Author(models.Model):
-    name = models.CharField(max_length=50)
-    qq = models.CharField(max_length=10)
+    name = models.CharField(max_length=100)
+    qq = models.CharField(max_length=100)
     addr = models.TextField()
     email = models.EmailField()
  
